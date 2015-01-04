@@ -5,6 +5,10 @@
 	<title>Shopping List</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<script src="//code.jquery.com/jquery.min.js"></script>
 	<script src="js/script.js"></script>
@@ -13,16 +17,37 @@
 	<div class="container">
 		<div class="labels">
 			<h1>Shopping List</h1>
-				<h3>List</h3>
-				<h3 class="storeSelector">Stores</h3>
+				<h3><i class="fa fa-list-alt"></i>List</h3>
+				<h5 class="storeSelector">Stores</h5>
 				<hr/>
 					<ul class="stores">
-						<li class="add">+ Add Stores</li>
+						<li class="addStores">+ Add Stores</li>
 					</ul>
 		</div>
 		<div class="items">
+			<div class="top-bar">
+				<ul>
+					<li>
+						<i class="fa fa-search"></i>
+						<input type="text" placeholder="Search"></input>
+					</li>
+						<li><i class="fa fa-plus"></i>
+					</li>
+				</ul>
+			</div>
 			<hr/>
-			<h3>+ Add Items</h3>
+			<ul class="listItems">
+				<li>
+					<input type="checkbox">Item 1</input>
+				</li>
+				<li>
+					<input type="checkbox">Item 2</input>
+				</li>
+				<li>
+					<input type="checkbox" class="notDone">Item 3</input>
+				</li>
+			<ul>
+			<h3 class="addItems">+ Add Items</h3>
 		</div>
 	</div>
 </body>

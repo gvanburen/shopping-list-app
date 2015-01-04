@@ -6,6 +6,8 @@ body {
 
 .container {
 	padding: 2em;
+	margin: 0 auto;
+	height: 100%;
 }
 
 .labels {
@@ -15,6 +17,14 @@ body {
 	margin: 0 auto;
 	padding: 1em;
 	color: #FFFFFF;
+}
+
+.fa-list-alt {
+	margin-right: 10px;
+}
+
+.fa-building-o {
+	margin-right: 16px;
 }
 
 .labels h1 {
@@ -28,7 +38,10 @@ body {
 	padding: 5px 15px;
 }
 
-.add {
+.labels h5 {
+	font-weight: 300;
+}
+.addStores {
 	color: #31B573;
 }
 
@@ -50,9 +63,54 @@ body {
 	}
 }
 
+.top-bar ul {
+	width: 100%;
+}
+
+.top-bar li {
+	display: inline-block;
+}
+
+.top-bar li:first-child {
+	width: 95%;
+}
+
+.top-bar input {
+	border: none;
+	font-size: 1em;
+}
+
+.top-bar input:focus {
+	outline:0;
+}
+
+.fa-search {
+	margin-right: 10px;
+}
+
+.items .quickAdd {
+	color: #545454;
+	float: left;
+}
+
 .items hr {
 	margin-top: 20px;
 }
 .items h3 {
 	color: #31B573;
 }
+
+.listItems li {
+	margin: .5em 0;
+}
+
+.listItems input {
+	margin-right: 5px;
+}
+
+input.notDone {
+	text-decoration: line-through;
+}
+
+
+
