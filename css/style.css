@@ -1,7 +1,7 @@
 body {
 	background-color: #545454;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .container {
@@ -19,30 +19,46 @@ body {
 	color: #FFFFFF;
 }
 
-.fa-list-alt {
-	margin-right: 10px;
-}
-
-.fa-building-o {
-	margin-right: 16px;
-}
-
 .labels h1 {
 	font-size: 3em;
 }
 
-.labels h3 {
-	font-size: 1.8em;
-	font-weight: 300;
+.labels p {
 	margin: 15px 0;
-	padding: 5px 15px;
 }
 
-.labels h5 {
-	font-weight: 300;
+.textEnter {
+	float: left;
+	height: 2em;
+	width: 100%;
 }
-.addStores {
-	color: #31B573;
+
+.textEnter li {
+	display: inline-block;
+	width: 45%;
+	margin: 5px auto;
+}
+
+.textEnter li:first-child {
+	margin-right: 15px;
+}
+
+.textEnter input {
+	height: 2em;
+	border-radius: 5px;
+	outline: 0;
+	font-size: 0.8em;
+}
+
+.clearButton button {
+	height: 3em;
+	border-radius: 5px;
+	min-width: 145px;
+	outline: none;
+	background-color: #FFFFFF;
+	text-align: left;
+	padding: 4px;
+	font-size: .7em;
 }
 
 .items {
@@ -63,54 +79,42 @@ body {
 	}
 }
 
-.top-bar ul {
+#listItems {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#listItems li {
+	text-align: center;
+	margin-bottom: 8px;
+	height: 1.2em;
 	width: 100%;
+
 }
 
-.top-bar li {
-	display: inline-block;
+.fa-check,
+.fa-trash {
+	width: 50px;
+	color: #FFFFFF;
+	height: 1.2em;
+	padding-top: 5px;
 }
 
-.top-bar li:first-child {
-	width: 95%;
-}
-
-.top-bar input {
-	border: none;
-	font-size: 1em;
-}
-
-.top-bar input:focus {
-	outline:0;
-}
-
-.fa-search {
-	margin-right: 10px;
-}
-
-.items .quickAdd {
-	color: #545454;
+.fa-check {
 	float: left;
+	background-color: #31B573;
 }
 
-.items hr {
-	margin-top: 20px;
-}
-.items h3 {
-	color: #31B573;
+.fa-trash {
+	float: right;
+	background-color: red;
 }
 
-.listItems li {
-	margin: .5em 0;
+.fa-check:hover,
+.fa-trash:hover {
+	color: #696969;
 }
 
-.listItems input {
-	margin-right: 5px;
+.done {
+	color: #545454;
 }
-
-input.notDone {
-	text-decoration: line-through;
-}
-
-
-
