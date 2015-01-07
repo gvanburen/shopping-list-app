@@ -1,10 +1,13 @@
 $(document).ready(function() {
 	var list = $('#listItems');
 	var newItem = $('#textBox');
+	var clear = $('.clearButton');
 	var doneButton = $('.fa fa-check');
 	var deleteButton = $('.fa fa-trash');
 
 	list.sortable();
+
+	clear.click(clearList);
 
 	newItem.keydown(function(enter) {
 	if (enter.keyCode == 13) {
@@ -20,7 +23,7 @@ $(document).ready(function() {
 function addItem() {
 	var inputItem = $('#textBox').val();
 	var list = $('#listItems');
-	var listItem = $('<li><span><i class="fa fa-check"></i>' + inputItem + '<i class="fa fa-trash"></i></span></li>');
+	var listItem = $('<li><i class="fa fa-check"></i>' + inputItem + '<i class="fa fa-trash"></i></li>');
 	var newItem = $('#textBox');
 
 	if (inputItem.length === 0 || inputItem.length > 41) {
@@ -32,9 +35,19 @@ function addItem() {
 }
 
 function doneItem () {
-	$(this).toggleClass('.done');
+	if ($(this).parent().css('opacity') == '0.5') {
+		$(this).parent().css('opacity','1');
+	} else {
+		$(this).parent().css('opacity','0.5');
+	}
 }
 
 function deleteItem() {
 	$(this).parent().remove();
+}
+
+function clearList() {
+	var list = $('#listItems');
+	
+	list.html('');
 }
