@@ -14,7 +14,7 @@ body {
 	background-color: #545454;
 	width: 40%;
 	float: left;
-	margin: 0 auto;
+	margin: 0 auto 45px auto;
 	padding: 1em;
 	color: #FFFFFF;
 }
@@ -27,10 +27,24 @@ body {
 	margin: 15px 0;
 }
 
+@media only screen and (max-width: 395px) {
+	.labels h1 {
+		font-size: 2em;
+	}
+
+	.labels p {
+		font-size: .8em;
+	}
+}
+
 .textEnter {
 	float: left;
 	height: 2em;
 	width: 100%;
+}
+
+.textEnter ul {
+	margin-bottom: 5px;
 }
 
 .textEnter li {
@@ -40,7 +54,7 @@ body {
 }
 
 .textEnter li:first-child {
-	margin-right: 15px;
+	margin-right: 25px;
 }
 
 .textEnter input {
@@ -81,23 +95,28 @@ body {
 
 #listItems {
 	text-align: center;
+	vertical-align: center;
 	font-size: 1.2em;
 }
 
 #listItems li {
 	text-align: center;
-	margin-bottom: 8px;
-	height: 1.2em;
+	margin-bottom: 2px;
+	height: 28px;
 	width: 100%;
-
+	padding-top:8px;
 }
 
+#listItems li:nth-child(odd){
+	background-color: #EDEDED;
+}
 .fa-check,
 .fa-trash {
 	width: 50px;
 	color: #FFFFFF;
-	height: 1.2em;
-	padding-top: 5px;
+	height: 28px;
+	padding-top: 7px;
+	margin-top: -8px;
 }
 
 .fa-check {
