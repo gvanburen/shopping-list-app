@@ -1,7 +1,8 @@
 body {
-	background-color: #545454;
+	background: #545454;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
+	background-image: url('../images/ZenBG.png');
 }
 
 .container {
@@ -11,7 +12,6 @@ body {
 }
 
 .labels {
-	background-color: #545454;
 	width: 40%;
 	float: left;
 	margin: 0 auto 45px auto;
