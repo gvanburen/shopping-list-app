@@ -107,6 +107,10 @@ body {
 	padding-top:8px;
 }
 
+#listItems li:hover {
+	cursor: pointer;
+}
+
 #listItems li:nth-child(odd){
 	background-color: #EDEDED;
 }
